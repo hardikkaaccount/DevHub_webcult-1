@@ -1,0 +1,694 @@
+/********** common setting **********/
+html{
+  scroll-behavior: smooth;
+}
+body {
+    /* display: grid; */
+    align-items : center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to left top, #031A9A, #8B53FF); */
+    background-image: linear-gradient(to left top, rgb(128, 119, 115), #efedeb);;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* min-height: 100%; */
+    /* flex-direction: column; */
+  }
+  
+  h3 {
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 30px;
+  }
+  
+  .abc{
+    padding: 0 35px;
+    margin-top: 170px;
+  }
+  .efg{
+    position: relative;
+  }
+  
+  
+  
+  
+  nav {
+      position: fixed; /* Set the navigation bar to be fixed */
+      top: 0; /* Position it at the top of the viewport */
+      left: 0; /* Align it to the left edge */
+      width: 100%; /* Make it span the full width of the viewport */
+      z-index: 1000; /* Set a high z-index to ensure it appears above other content */
+      /* Your existing styles */
+      display: flex;
+      height: 80px;
+      background: #1b1b1b;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px 0 100px;
+      flex-wrap: wrap;
+    }
+    
+    /* nav .logo{
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+    } */
+    nav ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    nav ul li{
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: #f2f2f2;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      color: #111;
+      background: #fff;
+    }
+    nav .menu-btn i{
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      display: none;
+    }
+    nav .menu-btn i{
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      display: none;
+    }
+    
+    input[type="checkbox"]{
+      display: none;
+    }
+    
+    
+    @media (max-width: 1098px) {
+     
+      nav {
+        position: fixed; /* Set the navigation bar to be fixed */
+        top: 0; /* Position it at the top of the viewport */
+        left: 0; /* Align it to the left edge */
+        width: 100%; /* Make it span the full width of the viewport */
+        z-index: 1000; /* Set a high z-index to ensure it appears above other content */
+        /* Your existing styles */
+        display: flex;
+        height: 80px;
+        background: #1b1b1b;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px 0 25px;
+        flex-wrap: wrap;
+      }
+    
+    
+      nav .menu-btn i{
+        display: block;
+      }
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      .first-nav ul{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+    
+      #click:checked ~ ul{
+        left: 0;
+      }
+      nav ul li{
+        width: 100%;
+        margin: 40px 0;
+      }
+      nav ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      #click:checked ~ ul li a{
+        margin-left: 0px;
+      }
+      .first-nav ul li a.active,
+      .first-nav ul li a:hover{
+        background: black;
+        color: cyan;
+      }
+      @media (max-width: 488px) {
+        .logo {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+        }
+      }
+    }
+    
+    
+    
+    
+    
+    /* Styles for the second menu button */
+    .second-nav .menu-btn i {
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      display: none;
+    }
+    
+    /* Media query for the second menu button */
+    @media (max-width: 1098px) {
+      .second-nav .content{
+        left: 60px;
+        color: #fff;
+        display: block;
+      }
+      .second-nav .menu-btn i {
+        display: block;
+      }
+      
+    
+    
+      /* Styles for the second menu when collapsed */
+      .second-nav ul {
+        position: fixed;
+        top: 127px; /* Adjust according to your layout */
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        padding: 10px 15px;
+      }
+      
+      /* Toggle menu visibility when checkbox is checked */
+      #click-second:checked ~ ul {
+        left: 0;
+      }
+      
+      /* Other styles for the collapsed second menu */
+      .second-nav ul li {
+        width: 100%;
+        margin: 140px 0;
+      }
+      #click-second:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+    
+      .second-nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        /* top: 145px; */
+      }
+      
+      #click-second:checked ~ ul li a {
+        margin-left: 0px;
+      }
+      
+      .second-nav ul li a.active,
+      .second-nav ul li a:hover {
+        background-color: #111;
+        color: cyan;
+      }
+    }
+    
+    .content{
+      color: #fff;
+      display: none;
+    }
+    
+    
+    
+    
+    
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+    
+    .logo img {
+      width: 40px; /* Adjust the width of the logo */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Add some spacing between the logo and the text */
+    }
+    
+    .subtext {
+      font-size: 12px; /* Adjust the font size as needed */
+      color: #888; /* Adjust the color as needed */
+      margin-top: 5px; /* Add some spacing between the brand and the subtext */
+    }
+    
+  
+  
+  
+  
+    
+  /* First Header Styles */
+  .first-nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items:center;
+    justify-content: space-between;
+    /* padding: 0 50px 0 100px; */
+    flex-wrap: wrap;
+  }
+  
+  .first-nav .logo {
+    color: #fff;
+    /* font-size: 30px; */
+    font-weight: 600;
+  }
+  
+  /* Second Header Styles */
+  .second-nav {
+    top: 80px;
+    display: flex;
+    height: 50px; /* Adjust height as needed */
+    width: 100%;
+    background: #333; /* Change background color as needed */
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  .second-nav ul {
+    display: flexbox;
+    list-style: none;
+  }
+  
+  .second-nav ul li {
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+  
+  .second-nav ul li a {
+    color: #fff; /* Change text color as needed */
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/* Add padding-top to the content to push it down below the headers */
+.xyz {
+    padding-top: 130px; /* Adjust the value according to the height of your headers */
+  }
+  
+  h2 {
+    display: block;
+    padding: 1% 2%;
+    font-size: 50px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    /* background-color: rgb(255, 0, 102); */
+    color: #000000;
+    /* border-radius: 50px; */
+    /* text-align: left; */
+    margin-bottom: 0;
+  }
+  
+  
+  /* Media query to adjust styling for smaller screens if necessary */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  }
+    
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+
+
+/* Footer  */
+
+.footer {
+    position: fixed; /* Set the footer to be fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+    z-index: 1000; /* Set a lower z-index than the headers */
+  }
+  
+  
+  
+  
+  
+  
+  
+  .first-nav,
+  .second-nav {
+    z-index: 1001;
+    position: fixed;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer {
+    /* Remove position: fixed; */
+    /* position: fixed; */
+    /* Set other styles as needed */
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+    background: #10182F;
+    width: 100%;
+  }
+  
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+  
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  
+  .footer-col .icons i:hover  {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+  
+    .footer-col form {
+      display: block;
+    }
+  
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+  
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
+  }
+  
