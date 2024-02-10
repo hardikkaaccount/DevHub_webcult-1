@@ -109,7 +109,7 @@ body {
         position: fixed; /* Set the navigation bar to be fixed */
         top: 0; /* Position it at the top of the viewport */
         left: 0; /* Align it to the left edge */
-        width: 100%; /* Make it span the full width of the viewport */
+        width: 90%; /* Make it span the full width of the viewport */
         z-index: 1000; /* Set a high z-index to ensure it appears above other content */
         /* Your existing styles */
         display: flex;
