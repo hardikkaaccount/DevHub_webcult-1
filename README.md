@@ -22,4 +22,47 @@ DevHub Club is a community-driven platform designed to bring developers together
 ##  📂 Start File
 - **index.html**
 
-<img href="https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html" src="https://visionop19cr.github.io/DevHub_webcult/Events/Logo/Orange.jpg" alt="DevHub Club Logo" width="500" height="500">
+<img href="https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html" src="https://visionop19cr.github.io/DevHub_webcult/Events/Logo/Orange.jpg" alt="DevHub Club Logo" width="300" height="300">
+
+## 📞 Contact Us  
+
+We would love to hear from you! Feel free to reach out to us for collaborations, queries, or just to connect. Below are our contact details:
+
+<table style="width: 100%; text-align: center; border-collapse: collapse;">
+
+  <tr>
+    <!-- Hardik's Image -->
+    <td>
+      <a href="https://github.com/hardikkaaccount" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/141545710?v=4" alt="Hardik Jain" style="width: 100px; height: 100px; border-radius: 50%;">
+      </a>
+    </td>
+    <!-- Chandan's Image -->
+    <td>
+      <a href="https://github.com/ViSiOnOp19cr" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQET66z1jpTsiw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709367270759?e=1738800000&v=beta&t=HBz4aOFyLJHFy2dQplYYMApe9SnqjBUEY-vATm2ntlo" alt="Chandan CR" style="width: 100px; height: 100px; border-radius: 50%;">
+      </a>
+    </td>
+  </tr>
+  
+  <tr>
+    <!-- Hardik's Name -->
+    <td>
+      <a href="https://www.linkedin.com/in/hardikjain108/" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+        Hardik Jain
+      </a>
+    </td>
+    <!-- Chandan's Name -->
+    <td>
+      <a href="https://www.linkedin.com/in/chandan-c-r-/" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+        Chandan CR
+      </a>
+    </td>
+  </tr>
+
+</table>
+
+
+<p style="text-align: center; font-style: italic; margin-top: 20px;">Looking forward to connecting with you!</p>
+
+
