@@ -20,7 +20,7 @@ DevHub Club is a community-driven platform designed to bring developers together
 - **[Devhub Club](https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html)**
 
 ##  📂 Start File
-- **index.html**
+- **Home/Atlas/index.html**
 
 <img href="https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html" src="https://visionop19cr.github.io/DevHub_webcult/Events/Logo/Orange.jpg" alt="DevHub Club Logo" width="300" height="300">
 
