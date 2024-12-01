@@ -16,4 +16,10 @@ DevHub Club is a community-driven platform designed to bring developers together
 - **Design Frameworks:** Bootstrap (or any other UI frameworks used).  
 - **Version Control:** Git & GitHub for project management and collaboration.
 
-## 📂 Project Structure  
+## 🌐 Deployed Link 
+- **[Devhub Club](https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html)**
+
+##  📂 Start File
+- **index.html**
+
+<img href="https://visionop19cr.github.io/DevHub_webcult/Home/Atlas/index.html" src="https://visionop19cr.github.io/DevHub_webcult/Events/Logo/Orange.jpg" alt="DevHub Club Logo" width="500" height="500">
