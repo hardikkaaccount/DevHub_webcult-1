@@ -12,8 +12,8 @@ DevHub Club is a community-driven platform designed to bring developers together
 - **Responsive Design:** Optimized for all screen sizes and devices.
 
 ## 🛠️ Technologies Used  
-- **Frontend:** HTML, CSS, JavaScript (or React if you used it).  
-- **Design Frameworks:** Bootstrap (or any other UI frameworks used).  
+- **Frontend:** HTML, CSS, JavaScript.
+- **Design Frameworks:** Bootstrap
 - **Version Control:** Git & GitHub for project management and collaboration.
 
 ## 🌐 Deployed Link 
